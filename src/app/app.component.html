@@ -3,16 +3,30 @@
   SZOFT II N
   2022-11-09
 -->
+<div class="col d-flex justify-content-center">
 
 <div class="container">
-  <h1>Feladat 0303</h1>
-  <h2>Gyepesítés</h2>
-  <div class="gyepForm">
-    <div class="mb-3">
-      <label for="" class="form-label"></label>
-      <input type="text" class="form-control">
+  <div class="card" style="width: 30rem">
+    <img class="card-img-top" src="assets/images/grass.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h2 class="card-title">Feladat 0303</h2>
+      <h5 class="card-subtitle mb-2 text-muted">Gyepesítés</h5>
+      <div class="gyepForm">
+        <div class="mb-3">
+          <label for="" class="form-label"></label>
+          <input type="text" class="form-control" placeholder="Adjon meg értéket"
+          [(ngModel)]="diameter">
+        </div>
+        <button class="btn btn-info"
+        (click)="calcArea()">Számít</button>
+        <div class="mb-3">
+          <label for="result"></label>
+          <input type="text" class="form-control" placeholder="Eredmény"
+          [(ngModel)]="price">
+        </div>
+      </div>
     </div>
-    <button>Számít</button>
-    
   </div>
+</div>
+
 </div>
