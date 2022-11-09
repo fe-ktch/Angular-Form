@@ -3,30 +3,36 @@
   SZOFT II N
   2022-11-09
 -->
-<div class="col d-flex justify-content-center">
+
 
 <div class="container">
-  <div class="card" style="width: 30rem">
+  <div class="card" style="width: 25rem">
     <img class="card-img-top" src="assets/images/grass.jpg" alt="Card image cap">
+    <h2 class="card-header">Feladat 0303</h2>
     <div class="card-body">
-      <h2 class="card-title">Feladat 0303</h2>
       <h5 class="card-subtitle mb-2 text-muted">Gyepesítés</h5>
       <div class="gyepForm">
-        <div class="mb-3">
+        <div class="input-group mb-3">
           <label for="" class="form-label"></label>
           <input type="text" class="form-control" placeholder="Adjon meg értéket"
-          [(ngModel)]="diameter">
-        </div>
-        <button class="btn btn-info"
+          aria-label="Adjon meg értéket" aria-describedby="basic-addon2" [(ngModel)]="diameter">
+        <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button"
         (click)="calcArea()">Számít</button>
-        <div class="mb-3">
+        </div>
+        </div>
+        <div class="input-group mb-3">
           <label for="result"></label>
           <input type="text" class="form-control" placeholder="Eredmény"
-          [(ngModel)]="price">
+          [(ngModel)]="price" aria-describedby="basic-addon2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon2">m²</span>
+          </div>
         </div>
       </div>
     </div>
+    <div class="card-footer text-muted">
+      Sangare F. Felisha SZOFT II N 2022-11-09
+    </div>
   </div>
-</div>
-
 </div>
